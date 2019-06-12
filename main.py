@@ -51,7 +51,7 @@ class player():
     def hit(self):
         self.isJump = False
         self.jumpCount = 10
-        self.x = 60
+        self.x = 350
         self.y = 410
         self.walkCount = 0
         font1 = pygame.font.SysFont('timesnewroman', 100)
