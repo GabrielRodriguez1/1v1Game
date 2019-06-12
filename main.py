@@ -162,9 +162,10 @@ while run:
             if person.hitbox[0] + person.hitbox[2] > villain.hitbox[0] and person.hitbox[0] < villain.hitbox[0] + villain.hitbox[2]:
                 person.hit()
                 score -= 5
-    #else:
-        #if villain.visible == False:
-            #print('You have defeated the villain and have won the game')
+    else:
+        if villain.visible == False:
+            print('You have defeated the villain and have won the game')
+            pygame.QUIT()
     if shooting > 0:
         shooting += 1
     if shooting > 3:
